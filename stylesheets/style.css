@@ -40,11 +40,7 @@ header {
   /*background: #1967BF;*/
     background: #efefef;
 }
-@media only screen and (max-width: 479px) {
-    header {
-        width: 400px;
-    }
-}
+
 header .crop {
     width: 200px;
     height: 200px;
