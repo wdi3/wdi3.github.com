@@ -47,7 +47,7 @@ header .crop {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 767px) {
     header {
       display: none;
       max-height: 450px;
@@ -101,7 +101,7 @@ nav ul {
     padding-left: 0;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 767px) {
     nav h6 {
         text-align: left;
     }
@@ -161,7 +161,7 @@ nav ul {
     padding: 5px 0;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 767px) {
     #main .name-list p, #main .profile p {
         font-size: 1.3em;
     }
@@ -235,7 +235,7 @@ nav ul {
     opacity: 0.9;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 767px) {
   .hero { position: static; padding-bottom: 0;}
   .hero-wrap { margin: 0; padding: 120px 60px; width: auto;}
 }
@@ -320,7 +320,7 @@ footer h1 {
     border: none;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 767px) {
     footer {
         background: #F24738;
         padding: 10px 20px;
