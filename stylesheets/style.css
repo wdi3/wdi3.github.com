@@ -101,7 +101,7 @@ nav ul {
     padding-left: 0;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 480px) {
     nav h6 {
         text-align: left;
     }
