@@ -1,0 +1,368 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500);
+
+/*
+************* RESET
+*/
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+/*
+************* HEADER / MASONRY
+*/
+
+header {
+    max-width: 1200px;
+    max-height: 600px;
+    margin: 0 auto;
+  /*background: #1967BF;*/
+    background: #efefef;
+}
+
+header .crop {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+header .crop img {
+    height: 100%;
+    opacity: 0.7;
+}
+
+/*
+************* NAV BAR
+*/
+
+nav {
+    color: #333;
+    border-bottom: 5px solid #F24738;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+nav ul li a, nav ul li a:active, nav ul li a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #F24738;
+}
+
+nav h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    margin: 25px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+@media only screen and (min-width: 480px) {
+    nav h6 {
+        text-align: left;
+    }
+
+    nav ul {
+        text-align: right;
+        margin: 25px 0;
+    }
+
+    nav.row.fixed {
+        position: fixed;
+        z-index: 99;
+        background: #fff;
+        top: 0;
+        opacity: 1.0;
+    }
+}
+
+/*
+************* MAIN SECTION STYLES
+*/
+
+#main .big-crop {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#main .big-crop img {
+    width: 100%;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#main {
+    clear: both;
+}
+
+#main p {
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
+#main .icon p {
+    font-size: 1.1em;
+    padding: 0 10px;
+    color: white;
+}
+
+#main .name-list p, #main .profile p {
+    font-size: 1em;
+    margin: 0;
+    padding: 5px 0;
+}
+
+@media only screen and (min-width: 480px) {
+    #main .name-list p, #main .profile p {
+        font-size: 1.3em;
+    }
+}
+
+#main .name-list {
+    padding: 25px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#main .profile-slider {
+  /*border: 20px solid #ddd;*/
+    padding: 0px 0;
+    margin: 25px 0 50px;
+}
+
+#main .profile h1 {
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+#main .profile h5 {
+    text-transform: uppercase;
+    margin: 5px 0;
+    color: #000;
+}
+
+#main .profile a {
+    text-transform: uppercase;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #1967BF;
+}
+
+.icon {
+    text-align: center;
+    background: #F24738;
+    padding: 75px 0 50px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.icon img {
+    width: 50%;
+    margin: 0 25%;
+}
+
+.rounded {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 181px;
+    position: absolute;
+    top: 0;
+}
+
+.hero-wrap {
+    width: 300px;
+    margin: 120px auto 0;
+    padding: 60px;
+    background: #F24738;
+    opacity: 0.9;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.hero h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+#students_title {
+    margin: 0 auto;
+}
+
+span {
+    padding: 0 5px;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.selected {
+    color: #1967BF;
+}
+
+#students_section {
+    margin-top: 50px;
+}
+
+.student-profile {
+    display: none;
+}
+
+.project {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#main .project p {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.right {
+    float: right;
+}
+
+footer h1 {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#main footer p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#main footer a, a:active, a:visited {
+    border-bottom: 3px solid #F24738;
+    text-decoration: none;
+    color: #F24738;
+}
+
+#main footer a:hover {
+    border: none;
+}
+
+@media only screen and (min-width: 480px) {
+    footer {
+        background: #F24738;
+        padding: 10px 20px;
+        border-radius: 3px 3px 0 0;
+        color: #fff;
+    }
+
+    #main footer a, a:active, a:visited {
+        border-bottom: 3px solid white;
+        color: white;
+        text-decoration: none;
+    }
+
+    #main footer a:hover {
+        border: none;
+    }
+}
+
+/* ISOTOPE SETTINGS */
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
+}
