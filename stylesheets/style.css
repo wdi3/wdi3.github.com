@@ -237,7 +237,7 @@ nav ul {
 
 @media only screen and (max-width: 479px) {
   .hero { position: static; padding-bottom: 0;}
-  .hero-wrap { margin: 0; padding: 120px 60px; }
+  .hero-wrap { margin: 0; padding: 120px 60px; width: auto;}
 }
 
 .hero h1 {
