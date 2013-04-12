@@ -1,4 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500);
+
+/*  FONTS SERVED BY TYPEKIT VIA JS*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500);*/
 
 /*
 ********** RESET
@@ -13,8 +15,21 @@ html[xmlns] .clearfix {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "brandon-grotesque";
+/*    background-color: #eeffdd;*/
 }
+
+/*ron - needed to punch up these headers */
+h2 {
+    font-size: 2.8em;
+    /* margin aligns h2 with other elements, improves spacing beneath */
+    margin: 10px;
+}
+h4 {
+    font-size: 1.2em;
+    margin: 0px;
+}
+/*end ron*/
 
 .clearfix:after {
     content: ".";
@@ -70,11 +85,16 @@ nav {
 
 nav ul li {
     display: inline-block;
-    margin: 0 5px;
-    font-family: 'Roboto', sans-serif;
+    /*ron - menu items needed more space, moved margin
+    to left side so not pushed too far off right edge */
+    margin: 0 0 0 10px;
+    /*margin: 0 5px;*/
+    font-family: "brandon-grotesque";
     font-weight: 500;
     font-size: 1em;
     text-transform: uppercase;
+    /*ron - opened up all caps*/
+    letter-spacing: .2em;
 }
 
 nav ul li a, nav ul li a:active, nav ul li a:visited {
@@ -88,12 +108,14 @@ nav ul li a:hover {
 }
 
 nav h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "brandon-grotesque";
     font-weight: 500;
     font-size: 1em;
     margin: 25px 0;
     text-transform: uppercase;
     text-align: center;
+    /*RON*/
+    letter-spacing: .2em;
 }
 
 nav ul {
@@ -156,7 +178,7 @@ nav ul {
 }
 
 #main .name-list p, #main .profile p {
-    font-size: 1em;
+    font-size: 1.4em;
     margin: 0;
     padding: 5px 0;
 }
@@ -182,12 +204,17 @@ nav ul {
 #main .profile h1 {
     text-transform: uppercase;
     margin: 5px 0;
+    /*ron - caps spaced out */
+    letter-spacing: .06em;
 }
 
 #main .profile h5 {
     text-transform: uppercase;
     margin: 5px 0;
     color: #000;
+    /*ron - caps spaced out, size slightly reduced */
+    letter-spacing: .1em;
+    font-size: .8em;
 }
 
 #main .profile a {
@@ -195,6 +222,9 @@ nav ul {
     margin: 5px 0;
     text-decoration: none;
     color: #1967BF;
+    /*ron - caps spaced out, size slightly reduced */
+    letter-spacing: .1em;
+    font-size: .9em;
 }
 
 .icon {
@@ -221,7 +251,7 @@ nav ul {
 .hero {
     width: 100%;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "brandon-grotesque";
     padding-bottom: 181px;
     position: absolute;
     top: 0;
@@ -233,6 +263,11 @@ nav ul {
     padding: 60px;
     background: #F24738;
     opacity: 0.9;
+}
+
+.big{
+    font-size: 2.4em;
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 479px) {
@@ -252,6 +287,7 @@ nav ul {
 .hero h4 {
     font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: .15em;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 15px;
@@ -275,6 +311,11 @@ span:hover {
 
 .selected {
     color: #1967BF;
+    font-weight: 700;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
 
 #students_section {
@@ -293,6 +334,28 @@ span:hover {
 #main .project p {
     font-size: 1em;
     font-weight: 400;
+    /* ron - constrain p with, harmonize with proj imgs. shorten lines */
+    padding: 0 50px 0 50px;
+}
+
+#main .project h4 {
+    font-size: 1.6em;
+    font-weight: 700;
+    /* ron - constrain p with, harmonize with proj imgs. shorten lines */
+    padding: 0 50px 0 50px;
+}
+
+
+
+
+
+
+
+.byline {
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
 }
 
 .right {
@@ -301,12 +364,13 @@ span:hover {
 
 footer h1 {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: "brandon-grotesque";
     font-weight: 100;
+    letter-spacing: .08em;
 }
 
 #main footer p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 300;
 }
 
