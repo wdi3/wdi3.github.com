@@ -4,8 +4,8 @@ $(document).ready(function() {
     $('header').isotope({
       layoutMode: 'perfectMasonry',
       perfectMasonry: {
-        columnWidth: 200, // Force columns to 200px wide
-        rowHeight: 200,
+        columnWidth: 150, // Force columns to 150px wide
+        rowHeight: 150,
         animationOptions: {
           duration: 750,
           easing: 'linear',
@@ -29,8 +29,8 @@ $(document).ready(function() {
   $('#' + selected).addClass('selected');
 
   // align box correctly
-  var height = $('header').height();
-  $('.hero-wrap').css('margin-top', ((height/2)-$('.hero-wrap').height()));
+  // var height = $('header').height();
+  // $('.hero-wrap').css('margin-top', ((height/2)-$('.hero-wrap').height()));
   // nav follows
   $(window).scroll(mobile_nav_bar);
 

@@ -42,9 +42,16 @@ header {
 }
 
 header .crop {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 479px) {
+    header {
+      display: none;
+      max-height: 450px;
+    }
 }
 
 header .crop img {
@@ -222,10 +229,15 @@ nav ul {
 
 .hero-wrap {
     width: 300px;
-    margin: 120px auto 0;
+    margin: 175px auto 0;
     padding: 60px;
     background: #F24738;
     opacity: 0.9;
+}
+
+@media only screen and (max-width: 479px) {
+  .hero { position: static; padding-bottom: 0;}
+  .hero-wrap { margin: 0; padding: 120px 60px; }
 }
 
 .hero h1 {
