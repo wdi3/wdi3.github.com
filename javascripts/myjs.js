@@ -19,7 +19,9 @@ $(document).ready(function() {
   var divs = $(".crop").get().sort(function() {
   return Math.round(Math.random())-0.5;
   }).slice(0,21);
-  $(divs).appendTo(divs[0].parentNode).show();
+  $(divs).appendTo(divs[0].parentNode);
+  for( i = 0; i < 9; i++ )
+    $($('.crop')[i]).show();
 
   // this finds the first image (newly sorted) and shows that profile
   var first_id = $('.crop').first().children('img').attr('id').replace('-pic', '-profile');
@@ -48,6 +50,16 @@ $(document).ready(function() {
   });
 })
 
+// this slides down the header
+if( $(window).width() > 767 )
+  $('.hero').find('h1').delay(600).slideDown(600).closest('.hero').find('h3').delay(1200).slideDown(600).closest('.hero').find('h5').delay(2400).slideDown(600)
+else {
+  $('.hero h1').show()
+  $('.hero h3').show()
+  $('.hero h5').show()
+}
+// $('.hero h3').slideDown()
+
 // this function brings you to about
 function about_page(e) {
   e.preventDefault();
@@ -58,14 +70,14 @@ function about_page(e) {
 // this function brings you to the students
 function students_page(e) {
   e.preventDefault();
-  var position = $('.name-list').parent().offset().top - 15
+  var position = $('.profile-slider').offset().top - 50
   $('html, body').animate({scrollTop:position}, 'slow');
 }
 
 // this function brings you to the projects
 function projects_page(e) {
   e.preventDefault();
-  var position = $('.profile-slider').next().offset().top - 15
+  var position = $('.project').first().parent().prev().offset().top - 100
   $('html, body').animate({scrollTop:position}, 'slow');
 }
 
@@ -81,12 +93,10 @@ function show_profile(e) {
 
 // this ensures the navbar moves around with the page
 function mobile_nav_bar() {
-  var aboveHeight = $('header').outerHeight();
+  var aboveHeight = $('header').outerHeight() + $('.hero').outerHeight();
   if ($(window).scrollTop() > aboveHeight){
-    $('nav').addClass('fixed').css('top','0').next()
-    .css('padding-top','60px');
+    $('nav').addClass('fixed').css('top','0');
   } else {
-    $('nav').removeClass('fixed').next()
-    .css('padding-top','0');
+    $('nav').removeClass('fixed');
   }
 }
