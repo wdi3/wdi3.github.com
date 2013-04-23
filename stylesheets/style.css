@@ -402,6 +402,10 @@ span:hover {
     float: right;
 }
 
+footer {
+    margin-top: 70px;
+}
+
 footer h1 {
     text-transform: uppercase;
     font-family: "brandon-grotesque";
